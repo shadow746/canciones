@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update</title>
+    <link rel="stylesheet" href="inicio.css">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="update.js"></script>
+
+</head>
+<body>
+    <h1 style="color: white;">modifique su información de usuario</h1>
+
+
+
+    <table>
+       
+        <tr>
+            <td><label for="key"> id</label></td>
+            <td><input type="text" id="key" value=""></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue1">cambiar nombre usuario:</label></td>
+            <td><input type="text" id="columnValue1" ></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue2">cambiar contraseña</label></td>
+            <td><input type="text" id="columnValue2" ></td>
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue3">cambiar gmail o facebook</label></td>
+            <td><input type="text" id="columnValue3" ></td>
+
+        
+        </tr>
+
+        <tr>
+            
+            <td><label for="columnValue4">cambiar foto</label></td>
+            <td><input type="text" id="columnValue4" ></td>
+            
+        
+        </tr>
+        <tr>
+            
+            <td><label for="columnValue5">cambiar fechanacimiento</label></td>
+            <td><input type="text" id="columnValue5" ></td>
+            
+        
+        </tr>
+    </table>
+
+    <button onclick="update()"> actualizar </button>
+
+    <p>
+        <a href="index.html">volver a Página principal</a>
+    </p>
+  
+
+    <h1 style="color: white;">Información del resultado</h1>
+    <p style="color: white;">¿Hay error?: <span id="error"></span></p>
+    <p style="color: white;">Mensaje: <span id="message"></span></p>
+    
+</body>
+</html>

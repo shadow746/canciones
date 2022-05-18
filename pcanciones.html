@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+     <link rel="stylesheet" href="pcanciones.css">
+     <script src="constantes.js"></script>
+
+    <title>Spotify</title>
+
+</head>
+
+<body>
+    <div class="general">
+            <div class="header">
+
+                <div class="perfil">
+                    <div class="titulo"><h1>Tus canciones más escuchadas</h1></div>
+
+                    <div class="circulo" id="divimagen"></div>
+                    <div class="titulo2"><h1> clic en tu foto para detalles</h1></div>
+
+                </div>
+            </div>
+        <div class="container">
+      
+          <div class="aside"> 
+                <div class="menu" >
+                    <a class="active" href="index.html"><span><img src="perfiles/inicio.jpg" ></span>inicio</a>
+                    <a class="active" href="#"><span><img src="perfiles/buscar.jpg" ></span>Buscar</a>
+                    <a class="active" id="insert" href="#"><span><img src="perfiles/mi.jpg" ></span >añadir cancion</a> <br>
+                    <a class="active" id="actualiza" href="#"><span><img src="perfiles/actu.jpg" ></span >actualiza tu perfil</a> <br>
+                            
+
+                </div>
+            </div> 
+          
+            <div id="resultado"> </div>
+
+      
+        </div>
+
+       
+        <div class="medio">
+            <div class="izquierdo">
+                <div id="letra"></div>
+            </div>
+
+
+        
+
+        
+            <div class="derecho">
+                <div id="gestionusuario"></div>
+
+            </div>
+
+
+        </div>
+
+        <p style="color: white">¿Hay error?: <span id="error" ></span></p>
+        <p style="color: white">Mensaje: <span id="message"></span></p>
+
+        <div class="footer" >
+        
+
+
+            <div class="progreso" >
+                <audio class="barra_progreso" id="miaudio" controls>
+                
+                </audio>
+            </div>
+        </div>
+
+    </div>
+    <script src="consultarcanciones.js"></script>
+
+    
+
+</body>
+
+</html>

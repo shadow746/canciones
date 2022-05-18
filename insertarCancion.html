@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <link rel="stylesheet" href="inicio.css">
+
+    <title>Insertar cancion</title>
+</head>
+
+<body>
+    <h1>Insertar aqui tu cancion</h1>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td><input type="text" id="ID"></td>
+        </tr>
+        <tr>
+            <td>titulo</td>
+            <td><input type="text" id="titulo"></td>
+        </tr>
+        <tr>
+            <td>cantante</td>
+            <td><input type="text" id="cantante"></td>
+        </tr>
+        <tr>
+            <td>letra</td>
+            <td><input type="text" id="letra"> </td>
+        </tr>
+        <tr>
+            <td>info</td>
+            <td><input type="text" id="info"></td>
+        </tr>
+        <tr>
+            <td>imagen</td>
+            <td><input type="text" id="imagen"></td>
+        </tr>
+      
+        <tr>
+            <td>cancion</td>
+            <td><input type="text" id="cancion"></td>
+        </tr>
+        <tr>
+            <td>genero</td>
+            <td><input type="text" id="genero"></td>
+        </tr>
+
+    </table>
+
+    <p>
+        <button onclick="insertarCancion()" id="btnInsertar">Insertar</button>
+    </p>
+    <p>
+        <a href="index.html">volver a Página principal</a>
+    </p>
+
+
+    <script src="insertarCancion.js"></script>
+</body>
+
+</html>

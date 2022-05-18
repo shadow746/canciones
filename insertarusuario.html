@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <link rel="stylesheet" href="inicio.css">
+
+    <title>registrarse</title>
+</head>
+
+<body>
+    <h1>registrar :</h1>
+    <table>
+      
+        <tr>
+            <td>usuario</td>
+            <td><input type="text" id="usuario"></td>
+        </tr>
+        <tr>
+            <td>contraseña</td>
+            <td><input type="text" id="contraseña"></td>
+        </tr>
+        <tr>
+            <td>repetir contraseña</td>
+            <td><input type="text" id="contraseña2"> </td>
+        </tr>
+        
+    </table>
+
+    <p>
+        <button onclick="insertaruser()" id="btnInsertar">Insertar usuario</button>
+    </p>
+    <div class="error-page" id="errorinsertar">
+        <div class="try-again"></div>
+      </div>
+    <p>
+        <a href="index.html">volver a Página principal</a>
+    </p>
+
+
+    <script src="insertaruser.js"></script>
+</body>
+
+</html>
