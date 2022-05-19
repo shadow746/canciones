@@ -21,22 +21,23 @@ function insertaruserTerminado(response){
 
     console.log(response);
     document.getElementById("errorinsertar").innerHTML=" ";
+    let usuarios=document.getElementById("usuario").value;
+   
  let passwd2=document.getElementById("contraseña2").value;
  let passwd=document.getElementById("contraseña").value;
  let IDnuevo = response.values.length+1;
  
- if (isNaN(passwd) )
+ if (passwd == null )
  { 
-    document.getElementById("errorinsertar").innerHTML="contraseña incorrecta.";
+    document.getElementById("errorinsertar").innerHTML="escribe una contraseña.";
     
     }
     
-else if (isNaN(usuario)){document.getElementById("errorinsertar").innerHTML="contraseña incorrecta.";
+else if (usuarios == null ){document.getElementById("errorinsertar").innerHTML="escribe un nombre de usuario.";
 }
   
-    else if (passwd2==passwd )
+     if (passwd2==passwd )
 {
-
 
     let usuario = 
     {
@@ -56,13 +57,15 @@ GoogleSheetDataBaseOperation(
     idImplementacion,
     dataForInsert,
     insertarMensajeError);
+    document.getElementById("errorinsertar").innerHTML="usuario creado.";
+ 
    
 }
    
 
 else{
     document.getElementById("errorinsertar").innerHTML=" ";
-    document.getElementById("errorinsertar").innerHTML="contraseña incorrecta.";
+    document.getElementById("errorinsertar").innerHTML="escribiste mal la contraseña.";
 }
 }
 
